@@ -9,15 +9,16 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* 1. Hero Section (Kohol Reference: Massive bold text, full screen, dark overlay) */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
-        <div className="absolute inset-0 z-0 bg-black">
+        <div className="absolute inset-0 z-0">
           <Image
             src="/images/black-and-white.jpg"
             alt="Black and white, wearing sunglasses with city reflection"
             fill
-            className="object-cover object-center opacity-60 md:opacity-80"
+            className="object-cover object-center grayscale opacity-40 mix-blend-overlay"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
+          <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent" />
         </div>
 
         <div className="container relative z-10 mx-auto px-4 text-center">
@@ -50,7 +51,7 @@ export default function Home() {
               A Portfolio of Disciplines
             </h2>
             <p className="text-muted-foreground text-lg">
-              Each field informs the others — legal rigour strengthens policy analysis, hosting sharpens communication, and writing gives all of it a voice.
+              Each field informs the others legal rigour strengthens policy analysis, hosting sharpens communication, and writing gives all of it a voice.
             </p>
           </div>
 
@@ -152,7 +153,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Article 1 */}
-            <Link href="/insights/shaping-the-future-of-fintech-in-nigeria" className="group block">
+            <Link href="/" className="group block">
               <div className="bg-white p-4 lg:p-6 shadow-sm hover:shadow-lg transition-all duration-300 h-full flex flex-col border border-transparent hover:border-accent/20">
                 <div className="relative h-64 md:h-72 mb-6 overflow-hidden">
                   <Image
@@ -177,7 +178,7 @@ export default function Home() {
             </Link>
 
             {/* Article 2 */}
-            <Link href="/insights/ai-driven-errors-in-nigerian-banking" className="group block">
+            <Link href="/" className="group block">
               <div className="bg-white p-4 lg:p-6 shadow-sm hover:shadow-lg transition-all duration-300 h-full flex flex-col border border-transparent hover:border-accent/20">
                 <div className="relative h-64 md:h-72 mb-6 overflow-hidden bg-primary/5 flex items-center justify-center">
                   <Image
@@ -228,7 +229,7 @@ export default function Home() {
             Ready to Connect?
           </h2>
           <p className="text-white/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-            Whether you need legal counsel, policy analysis, a compelling host for your next event, or guidance through mentorship — let's start a conversation.
+            Whether you need legal counsel, policy analysis, a compelling host for your next event, or guidance through mentorship let's start a conversation.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="bg-accent text-white hover:bg-accent/90 w-full sm:w-auto h-14 px-8 text-base font-semibold tracking-wide">
