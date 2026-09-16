@@ -14,11 +14,11 @@ export default function Home() {
             src="/images/black-and-white.jpg"
             alt="Black and white, wearing sunglasses with city reflection"
             fill
-            className="object-cover object-center grayscale opacity-40 mix-blend-overlay"
+            className="object-cover object-center grayscale opacity-650"
             priority
           />
-          <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent" />
+          <div className="absolute inset-0 bg-primary/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
         </div>
 
         <div className="container relative z-10 mx-auto px-4 text-center">
